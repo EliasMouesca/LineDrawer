@@ -29,6 +29,8 @@ int main(int argc, char* argv)
 	Uint64 nextFrame = SDL_GetTicks64() + 1000 / FPS;
 	Uint64 nextLine = 0;
 
+	SDL_RenderPresent(ren);
+
 	while (running)
 	{
 		SDL_Event event;
